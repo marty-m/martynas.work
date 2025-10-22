@@ -1,7 +1,7 @@
 package work.martynas.lens.photo;
 
 import jakarta.validation.constraints.NotEmpty;
-import org.springframework.data.annotation.Id;;
+import org.springframework.data.annotation.Id;
 
 public record Photo(
         @Id
