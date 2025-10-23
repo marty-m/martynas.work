@@ -9,8 +9,7 @@ public record Photo(
         String name,
         String description,
         @NotEmpty
-        String url,
-        Integer albumId,
-        Boolean visible
+        String uri,
+        Integer albumId
 ) {
 }

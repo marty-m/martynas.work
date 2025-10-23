@@ -9,7 +9,7 @@ public record Album(
         Integer id,
         String title,
         String description,
-        String coverUrl,
+        String coverUri,
         List<Photo> photos
 ) {
 }
