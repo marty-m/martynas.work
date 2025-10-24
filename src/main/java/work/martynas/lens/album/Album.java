@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 
 public record Album(
         @Id Integer id,
-        String title,
+        String name,
         String description,
         @NotEmpty String coverUrl
 ) {
