@@ -1,4 +1,4 @@
-package work.martynas.lens.photo;
+package work.martynas.lens.album;
 
 import org.springframework.data.repository.ListCrudRepository;
 

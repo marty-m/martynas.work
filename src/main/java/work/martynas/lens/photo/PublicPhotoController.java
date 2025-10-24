@@ -11,11 +11,11 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/photos")
-public class PhotoController {
+public class PublicPhotoController {
 
     public final PhotoRepository photoRepository;
 
-    public PhotoController(PhotoRepository photoRepository) {
+    public PublicPhotoController(PhotoRepository photoRepository) {
         this.photoRepository = photoRepository;
     }
 
