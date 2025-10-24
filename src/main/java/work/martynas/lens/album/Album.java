@@ -8,6 +8,6 @@ public record Album(
         @Id Integer id,
         String name,
         String description,
-        @NotEmpty String coverUrl
+        String coverUrl
 ) {
 }

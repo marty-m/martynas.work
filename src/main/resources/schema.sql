@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS Album (
     id INT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(250) NOT NULL,
     description VARCHAR(750) NOT NULL,
-    cover_url VARCHAR(500) NOT NULL,
+    cover_url VARCHAR(500),
     PRIMARY KEY (id)
 );
 
@@ -15,3 +15,4 @@ CREATE TABLE IF NOT EXISTS Photo (
     PRIMARY KEY (id),
     FOREIGN KEY (album_id) REFERENCES Album(id) ON DELETE CASCADE
 );
+
