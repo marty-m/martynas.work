@@ -43,7 +43,7 @@ public class AdminPhotoController {
                     );
                     return photoRepository.save(updatedPhoto);
                 })
-                .orElseThrow(() -> new PhotoNotFoundException());
+                .orElseThrow(PhotoNotFoundException::new);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
