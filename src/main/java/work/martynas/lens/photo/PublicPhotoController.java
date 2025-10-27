@@ -35,7 +35,7 @@ public class PublicPhotoController {
 
     }
 
-    @GetMapping("a/{albumId}")
+    @GetMapping("/a/{albumId}")
     List<Photo> findByAlbumId(@PathVariable Integer albumId) {
         return photoRepository.findByAlbumId(albumId);
     }
