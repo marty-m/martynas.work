@@ -1,4 +1,5 @@
 package work.martynas.lens.bucket;
+import lombok.Getter;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
@@ -30,9 +31,13 @@ public class CloudFlareR2Client {
      */
     public static class S3Config {
         private final String accountId;
+        @Getter
         private final String accessKey;
+        @Getter
         private final String secretKey;
+        @Getter
         private final String endpoint;
+        @Getter
         private final String publicDomain;
 
         public S3Config(String accountId, String accessKey, String secretKey, String publicDomain) {
@@ -43,10 +48,6 @@ public class CloudFlareR2Client {
             this.publicDomain = publicDomain;
         }
 
-        public String getAccessKey() { return accessKey; }
-        public String getSecretKey() { return secretKey; }
-        public String getEndpoint() { return endpoint; }
-        public String getPublicDomain() { return publicDomain; }
     }
 
     /**
